@@ -1,0 +1,30 @@
+body{
+    color: brown;
+}
+#heading{
+    color: red;
+    font-weight: bold;
+}
+.head{
+    font-style: italic;
+}
+.third{
+    font-weight: bold;
+}
+.first{
+    text-decoration: line-through ;
+    font-weight: bold;
+}
+#second{
+    text-decoration: underline;
+}
+.bg{
+    background-color: yellow;
+}
+.text{
+    font-family: monospace;
+}
+#sty{
+    font-weight: 500;
+    font-family: cursive;
+}
