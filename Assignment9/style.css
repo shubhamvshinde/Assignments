@@ -1,0 +1,157 @@
+body{
+    background-image: url(./image/sara.jpg);
+    background-size: cover;
+}
+.head{
+    color: white;
+    display: flex;
+    justify-content: right;
+    /* border: 2px solid red; */
+}
+.nav-left{
+    margin: 30px;
+}
+.logo{
+    margin: 30px;
+    left: 100px;
+    position: absolute;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 520px;
+    /* border: 1px solid red; */
+}
+.text{
+    padding: 90px 0px 0px 90px;
+    padding-bottom: 170px;
+    /* border: 2px solid black; */
+    color: white;
+    width: auto;
+}
+h1{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+button{
+    padding: 10px 50px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    padding-left: 20px;
+}
+.box{
+    margin: 20px;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.5s;
+    /* border: 1px solid black; */
+}
+.box1{
+    background-image: url(./image/pic-1.png);
+    background-size: cover;
+}
+.box2{
+    background-image: url(./image/pic-2.png);
+    background-size: cover;
+}
+.box3{
+    background-image: url(./image/pic-3.png);
+    background-size: cover;
+}
+.box4{
+    background-image: url(./image/pic-4.png);
+    background-size: cover;
+}
+h4{
+    margin: 0px;
+    padding: 15px 0px 0px 15px;
+}
+.data{
+    margin: 0px;
+    padding: 0px 20px 0px 15px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.box:hover{
+    transform:translateY(-12px);
+}
+
+@media screen and (min-width:400px) and (max-width:900px) {
+    .logo{
+        left: 40px;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px 1fr;
+    }
+    .text{
+        padding: 0px 0px 0px 70px;
+    }
+    h1{
+        margin-top: 20px;
+        font-size: 50px;
+    }
+    .image{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .box{
+        height: 225px;
+        width: 500px;
+        background-position-y: -170px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (min-width:300px) and (max-width:400px) {
+    body{
+        padding-left : 30px;
+    }
+    .head{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        float: right;
+    }
+    .logo{
+        left: -10px;
+        top: -15px;
+    }
+    .nav-left{
+        margin: 0px;
+    }
+    .manu{
+        grid-column: 2/3;
+        grid-row: 1/4;
+        position: relative;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .text{
+        padding: 0px;
+    }
+    h1{
+        margin-top: 70px;
+        font-size: 40px;
+    }
+    .image{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .box{
+      height: 225px;
+      padding: auto;
+    }
+}
